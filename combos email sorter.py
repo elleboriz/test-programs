@@ -1,5 +1,5 @@
 x_file = (open("C:\\Users\\gmb\\Documents\\mix.txt").read()).replace("\n", ",").split(",")
-damain = "@wanadoo.fr"
+damain = input("Enter domain name e.g(@yahoo.com): ")
 f_email = lambda email: damain in email
 xdomain_email = list(filter(f_email, x_file))
 output = []
