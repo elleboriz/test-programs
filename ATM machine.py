@@ -9,10 +9,7 @@ for i in range(1,4):
             print(f"you have {i} try left")
             if i == 0:
                   print("Too many incorrect passwords,Your account has been blocked \nContact client support")
-
             else:continue
-
-
       else:
             print("Which transaction do you want make"
                   "\n1)Deposit\n2)Withdraw\n3)Consult my balace ")
@@ -30,8 +27,6 @@ for i in range(1,4):
                         else:
                             print(balance - w_amnt)
                             break
-
-
                   elif trasaction == 1:
                         dp_amnt = int(input("Enter amount you want to deposit: "))
                         balance = balance + dp_amnt
