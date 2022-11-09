@@ -8,7 +8,8 @@ for i in range(1,4):
       if code != passcode:
             print(f"you have {i} try left")
             if i == 0:
-                  print("Too many incorrect passwords,Your account has been blocked \nContact client support")
+                  print("Too many incorrect passwords,Your account has been blocked"
+                        " \nContact client support")
             else:continue
       else:
             print("Which transaction do you want make"
@@ -32,6 +33,7 @@ for i in range(1,4):
                         balance = balance + dp_amnt
                         print(f"You have successfully deposited {dp_amnt}{currency}")
                         break
-            else:print("Error!!Choose the opreation you want to perform amongs the following\n1)Deposit\n2)Withdraw\n3)Consult my balace")
+            else:print("Error!!Choose the opreation you want to perform amongs the following"
+                       "\n1)Deposit\n2)Withdraw\n3)Consult my balace")
       break
 print("Thanks for using MyATM ")
