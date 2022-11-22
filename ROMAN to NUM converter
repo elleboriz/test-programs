@@ -1,0 +1,24 @@
+roman = input('Enter a roman figure e.g[IV]: ')
+#'dic' contains key:values of romans : numerals
+dic={'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000,'IV':4,'IX':9}
+#roman characters break in  list 'lst'
+lst=[]
+[lst.append(i) for i in  roman]
+result=0
+#identifying special roman char such as IV and IX
+special_char = ''
+if len(roman)>1:
+    if lst[-1] == 'V' and lst[-2] == 'I' or lst[-1] == 'X' and lst[-2] == 'I':
+        special_char_lst = lst[-2], lst[-1]
+        lst.pop(-1)
+        lst.pop(-1)
+        lst.append(''.join(special_char_lst))
+#looping in dic and lst to find identical values and compute
+for i in dic:
+    for x in lst:
+        if x == 'I' and len(lst)==1:
+            result = 1
+            break
+        elif x==i:result=result+dic[i]
+print(result)
+
