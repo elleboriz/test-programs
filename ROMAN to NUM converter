@@ -20,7 +20,7 @@ def roman_to_num(roman):
 
     lst =[i for i in roman]
     result = 0
-    if len(roman) <= 1:
+    if len(roman) <= 0:
         return roman
     if lst[-1] == 'V' and lst[-2] == 'I' or lst[-1] == 'X' and lst[-2] == 'I':
         special_char_lst = lst[-2], lst[-1]
