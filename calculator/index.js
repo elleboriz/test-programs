@@ -1,3 +1,11 @@
+/*
+*Solution for value screen overlaping through javascript*
+
+
+Fixing the problem of values of calculator screen overlaping 
+either by setting a format for value above screen size or by
+limiting the size of the number the calculator should support .
+*/
 var cal_screen="" ;
 
 var input_one ;
