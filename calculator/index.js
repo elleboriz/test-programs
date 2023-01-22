@@ -6,10 +6,10 @@ Fixing the problem of values of calculator screen overlaping
 either by setting a format for value above screen size or by
 limiting the size of the number the calculator should support .
 */
-var cal_screen="" ;
+let cal_screen="" ;
 
-var input_one ;
-var input_two ;
+let input_one ;
+let input_two ;
 let operation ;
 let result ;
 
