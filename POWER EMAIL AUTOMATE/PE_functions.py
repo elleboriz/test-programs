@@ -7,7 +7,7 @@ OPENING TEXT FILE AND READING CONTENT
 #input('Enter file PATH:')
 def file_open():
     try:
-        with open(r"C:\Users\gmb\Desktop\Good.txt",errors='replace') as opened_file:
+        with open(input('Enter file PATH:'),errors='replace') as opened_file:
             r_file = opened_file.read()
             opened_file.close()
             return r_file
