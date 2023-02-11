@@ -77,6 +77,7 @@ resetBtn.addEventListener('click',()=>{
     sec = 0
     min = 0
     hrs = 0
+    laps = 1
     timerScreen.innerHTML = `${hrs}:${min}:${sec}    <sup>:  ${milsec} </sup>`
     captureContainer.innerHTML = `<p id="capture-head">Laps</p>`;
 })
