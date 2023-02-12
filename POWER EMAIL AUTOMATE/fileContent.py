@@ -1,4 +1,4 @@
-import regex
+import text_emails
 """
 OPENING TEXT FILE AND READING CONTENT
 :returns FILE CONTENT
@@ -22,7 +22,7 @@ def file_open():
 read_file = file_open()
 
 """  STILL UNDER DEVELOPEMENT
-test = regex.regex_filter(read_file)
+results = emailFunc.text_emails(read_file)
 
 """
 
