@@ -10,7 +10,7 @@ def pass_gen(value=None):
         """   
         :param value: 
         :return: a string of  random combination of ascii characters , numbers  and symbols 
-        base on user preferred word
+        'optionally' base on user preferred word
         """
 
         symbol = str(punctuation)
@@ -33,9 +33,3 @@ def pass_gen(value=None):
         return """An Error occurred:
 < check input type should be string (str) >
          """
-
-
-
-
-
-
