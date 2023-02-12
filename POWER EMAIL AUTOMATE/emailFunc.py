@@ -6,7 +6,7 @@ extrats emails from a string of sentences
 :return List of extrated emails 
 """
 
-def regex_filter(text):
+def text_emails(text):
     try:
 
         pattern = re.compile(r'([a-zA-Z0-9-._]+)@([a-zA-Z-]+)\.([a-zA-Z]+)')
