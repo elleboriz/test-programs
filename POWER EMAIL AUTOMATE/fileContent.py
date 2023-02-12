@@ -1,4 +1,4 @@
-import text_emails
+import emailFunc
 """
 OPENING TEXT FILE AND READING CONTENT
 :returns FILE CONTENT
