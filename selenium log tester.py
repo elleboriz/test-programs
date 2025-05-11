@@ -12,7 +12,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 status = False
-#opening combo list
+#opening  list
 def openfile():
     try:
         with open("xxxxxx_brz.txt" , errors="replace" ) as opened_f:
@@ -32,7 +32,7 @@ def openfile():
 
 
 
-#Function for chrome instance with each mail/pass
+#Function for chrome instance with each log/pass
 
 
 def inst(mail ,mdp ):
@@ -69,7 +69,7 @@ def inst(mail ,mdp ):
 
 
 
-
+#log validator script
 combos = openfile()
 for combo in combos:
     try:
